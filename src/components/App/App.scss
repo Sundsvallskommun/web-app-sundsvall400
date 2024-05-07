@@ -1,0 +1,588 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.campaignlist {
+  display: block;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.rectangles {
+  display: flex;
+  // max-width: 1636px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+.squares {
+  display: flex;
+  //max-width: 1636px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.events {
+  position: relative;
+  display: flex;
+  //max-width: 1636px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+}
+
+.campaignslideshow {
+  position: relative;
+  min-height: 750px;
+  max-width: 1636px;
+  width: 100%;
+}
+
+.view {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0.1%, black 5%);
+  mask-image: linear-gradient(to right, transparent 0.1%, black 5%);
+}
+
+.slideshowview {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to left, transparent 0.8%, black 15%);
+  mask-image: linear-gradient(to left, transparent 0.8%, black 15%);
+}
+
+.slideshowlist {
+  max-width: 1676px;
+  margin: 0 auto;
+  overflow: visible;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.slidebuttonwrapper {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  z-index: 30;
+}
+.slideEventbuttonwrapper {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  z-index: 30;
+}
+.slidebuttonbox {
+  position: relative;
+  max-width: 1636px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slidearrow {
+  position: absolute;
+  right: -23px;
+  border: 0;
+  outline-style: none;
+}
+
+.slidearrow img {
+  width: 120px;
+  height: 120px;
+}
+
+.scrollend {
+  padding-right: 20px;
+}
+
+article.rectanglearticle {
+  width: 32%;
+  max-width: 532px;
+  height: 600px;
+  border: 5px solid var(--env-element-background-color);
+  border-radius: 27px;
+}
+
+article.squaresarticle {
+  max-width: 32%;
+  flex: 32%;
+  height: 526px;
+  border-radius: 27px;
+}
+
+article.eventarticle {
+  max-width: 23.8%;
+  flex: 23.8%;
+  height: auto;
+}
+
+.art {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.art a {
+  text-decoration: none;
+}
+
+.logotag {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  border-radius: 0 22px 0 0;
+  width: 155px;
+  height: 155px;
+  background-color: var(--env-element-background-color);
+}
+
+.logotag svg {
+  width: 65px;
+  height: 109px;
+  filter: brightness(1.5) contrast(0.7);
+  fill: var(--env-element-background-color);
+}
+
+.datetag {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  border-radius: 0 22px 0 0;
+  width: 116px;
+  height: 116px;
+  background-color: var(--env-element-primary-background-color);
+}
+.datetag strong {
+  display: block;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin-bottom: 3.2px;
+  font-weight: 700;
+}
+
+.datetag p {
+  font-weight: 400;
+}
+
+.rectanglearticle .imgbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  transition: background 0.25s;
+}
+.squaresarticle .imgbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  transition: background 0.25s;
+}
+
+.eventarticle .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 394px;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.rectanglearticle .imgbox,
+.squaresarticle .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.rectanglearticle .imgbox img,
+.squaresarticle .imgbox img {
+  height: 100%;
+  transition: height 0.25s;
+}
+
+.eventarticle .imgbox img {
+  height: 100%;
+  transition: height 0.25s;
+}
+
+a:hover .imgbox img {
+  height: 115%;
+}
+
+a:hover h2 {
+  text-decoration: underline !important;
+}
+
+.rectanglearticle a:hover .gotoarrow {
+  background-color: var(--env-element-secondary-background-color);
+}
+
+.squaresarticle a:hover .gotoarrow,
+.eventarticle a:hover .gotoarrow {
+  background-color: var(--env-element-background-color);
+}
+
+.rectanglearticle a:hover .gotoarrow svg {
+  fill: var(--env-element-primary-background-color);
+}
+
+.rectanglearticle .bottominfo {
+  position: absolute;
+  z-index: 10;
+  bottom: 0px;
+  padding: 34px 60px;
+}
+
+.squaresarticle .bottominfo {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--env-element-secondary-background-color);
+  border-radius: 0px 0 22px 22px;
+}
+.titlearrow {
+  padding: 0px 65px 0px 65px;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  align-content: center;
+  border-radius: 0px 0 22px 22px;
+  min-height: 61px;
+}
+
+.rectanglearticle .bottominfo > h2 {
+  min-height: 58px;
+  height: 100%;
+  padding-top: 22px;
+}
+
+.squaresarticle .bottominfo .titlearrow > h2 {
+  padding: 0;
+  flex-shrink: 1;
+}
+
+.eventarticle h2 {
+  min-height: 35px;
+}
+
+.rectanglearticle p {
+  font-weight: 600 !important;
+}
+
+.gotoarrow {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  outline: none;
+  border: 0;
+  transition: all 0.25s;
+}
+
+.titlearrow .gotoarrow,
+.eventarticle .gotoarrow {
+  background-color: var(--env-element-primary-background-color);
+}
+
+.rectanglearticle .bottominfo > .gotoarrow {
+  background-color: var(--env-element-background-color);
+}
+
+.rectanglearticle .bottominfo > .gotoarrow svg,
+.titlearrow .gotoarrow svg {
+  fill: var(--env-element-secondary-background-color);
+}
+
+.eventinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6px;
+  padding: 9.6px;
+}
+
+.eventinfo .timelocation span {
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 3.2px;
+  margin-bottom: 9.6px;
+  font-weight: 600 !important;
+}
+
+.timelocation svg {
+  fill: var(--env-element-background-color);
+  width: 20px;
+  height: 20px;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.endMessage {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--env-element-background-color);
+  font-family: "Raleway";
+}
+
+@media only screen and (max-width: 600px) {
+  .slideshowlist {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .rectangles,
+  .squares,
+  .events {
+    display: block !important;
+  }
+
+  article.rectanglearticle {
+    display: block;
+    max-width: 328px !important;
+    width: 100% !important;
+    height: 350px !important;
+    margin: 0 auto;
+  }
+
+  .rectangles article.rectanglearticle {
+    margin-bottom: 20px !important;
+  }
+
+  article.squaresarticle,
+  article.eventarticle {
+    margin: 0 auto;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .slidebuttonbox {
+    display: none;
+  }
+
+  .slideshowview {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+  }
+
+  .slideshowview:has(article.eventarticle) {
+    padding-bottom: 0 !important;
+  }
+
+  .slideshowview::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+
+  .slideshowview::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #00426031;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .slideshowview::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #507483;
+  }
+
+  .loader,
+  .endMessage {
+    grid-column: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .rectangles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 318px);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  article.rectanglearticle {
+    height: 350px;
+  }
+
+  .squares {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 318px);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 318px);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  .squaresarticle,
+  .eventarticle,
+  .rectanglearticle {
+    flex: none !important;
+    max-width: 318px !important;
+    width: 100% !important;
+    margin-bottom: 0;
+  }
+
+  .datetag {
+    width: 92px;
+    height: 92px;
+  }
+
+  .datetag strong {
+    font-size: x-large;
+  }
+
+  .view {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .slideshowview {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .loader,
+  .endMessage {
+    grid-column: 1/3;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  article.rectanglearticle {
+    height: 450px;
+  }
+
+  .squares,
+  .events {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  article.squaresarticle {
+    max-width: 31.9%;
+    flex: 31.9%;
+    margin-bottom: 0;
+    height: 322px !important;
+  }
+
+  article.rectanglearticle {
+    max-width: 31.9%;
+    flex: 31.9%;
+    margin-bottom: 0;
+  }
+
+  article.eventarticle {
+    max-width: 31.9%;
+    flex: 31.9%;
+  }
+
+  article.eventarticle .imgbox {
+    height: 322px !important;
+  }
+
+  .rectanglearticle .bottominfo {
+    padding: 26px 30px;
+  }
+
+  .squaresarticle .bottominfo .titlearrow {
+    padding: 14px 27px;
+    min-height: 100px;
+    height: auto;
+  }
+
+  .rectanglearticle .bottominfo > h2 {
+    min-height: 30px;
+  }
+
+  .squaresarticle .bottominfo .titlearrow > h2 {
+    font-weight: 800;
+  }
+
+  .logotag {
+    width: 94px;
+    height: 94px;
+  }
+
+  .logotag svg {
+    width: 40px;
+    height: 67px;
+  }
+
+  .slidearrow {
+    margin-right: 10px;
+  }
+
+  .slidearrow img {
+    width: 92px;
+    height: 92px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  article.squaresarticle {
+    height: 28vw;
+  }
+
+  article.eventarticle .imgbox {
+    height: 22vw;
+  }
+}
