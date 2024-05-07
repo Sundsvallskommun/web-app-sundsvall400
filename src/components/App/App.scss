@@ -1,0 +1,137 @@
+.instagalleryDesktop {
+  max-width: 1676px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.25em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+.instagalleryMobile {
+  display: none;
+}
+.instagalleryDesktop article {
+  border-radius: 27px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.instagalleryDesktop a {
+  width: 100%;
+  height: 100%;
+}
+
+.biginsta {
+  width: 40%;
+  height: 600px;
+}
+.mediuminstaBox {
+  width: 34%;
+  height: 740px;
+  display: flex;
+  align-items: end;
+}
+.mediuminsta {
+  height: 480px;
+}
+.smallinsta {
+  width: 100%;
+  height: 360px;
+}
+
+.instagalleryDesktop article img,
+.instagalleryMobile article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instaArticle:focus-within {
+  outline: 5px solid var(--env-element-primary-background-color);
+  border: 2px solid var(--env-element-secondary-background-color);
+}
+
+.pairOfPosts {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.instagalleryDesktop article img {
+  transition: all 0.25s;
+}
+
+.instagalleryDesktop article:hover img {
+  width: 110%;
+}
+
+@media only screen and (max-width: 960px) {
+  .instagalleryDesktop {
+    display: none;
+  }
+
+  .instagalleryMobile {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.25em;
+    width: 100%;
+    height: 100%;
+    padding-left: 1.25em;
+    overflow-x: scroll;
+    padding-bottom: 1em;
+  }
+
+  .instagalleryMobile::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  .instagalleryMobile::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #57575731;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .instagalleryMobile::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #b3b3b3;
+  }
+  .instaArticle:focus-within {
+    outline: none;
+    border: 5px solid var(--env-element-background-color);
+  }
+
+  .slideitem {
+    flex: none;
+    width: 318px;
+    height: 351px;
+    border-radius: 27px;
+    border: 5px solid var(--env-element-background-color);
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1636px) {
+  .biginsta {
+    height: 31vw;
+  }
+
+  .mediuminstaBox {
+    height: 39.4vw;
+  }
+
+  .mediuminsta {
+    height: 26vw;
+  }
+
+  .smallinsta {
+    height: 19vw;
+  }
+}
