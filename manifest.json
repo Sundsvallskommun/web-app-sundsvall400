@@ -1,0 +1,19 @@
+{
+  "id": "youtubeVideo",
+  "version": "1.0.1",
+  "name": {
+    "en": "Sk Youtube video",
+    "sv": "Sk Youtube video"
+  },
+  "author": "Sundsvalls kommun",
+  "description": {
+    "en": "A video from Youtube",
+    "sv": "En video från Youtube"
+  },
+  "helpUrl": "",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}

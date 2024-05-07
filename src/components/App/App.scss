@@ -1,0 +1,158 @@
+.bannerwrapper {
+  max-width: 1920px;
+  width: 100%;
+  max-height: 1080px;
+  height: 100%;
+  margin: 0 auto;
+}
+.videoBanner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoBanner img {
+  width: 100%;
+}
+
+.videoBanner {
+  width: 100%;
+  height: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 27px;
+}
+
+.videoBanner.videoBannerMargin {
+  margin-bottom: 20px;
+}
+
+.videoBannerTextContainer {
+  position: absolute;
+  left: 0;
+  top: 9vw;
+  margin: auto;
+  right: 0;
+  padding: 150px 150px 0 150px;
+  transform: translateY(-50%);
+  text-align: center;
+  max-width: 800px;
+  z-index: 0;
+  cursor: pointer;
+}
+.videoBannerTextContainer h2 {
+  color: var(--env-element-secondary-background-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.videoBannerSubHeading {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  color: var(--env-element-secondary-background-color);
+  cursor: pointer;
+}
+
+.videoBanner:hover .videoBannerTextContainer::after {
+  bottom: -60px;
+}
+.hiddencontext {
+  display: none;
+}
+.videoBanner button {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.playbutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--env-element-primary-background-color);
+  border-width: 0;
+  cursor: pointer;
+}
+
+.playbutton svg {
+  fill: var(--env-element-secondary-background-color);
+  width: 50px;
+  height: 50px;
+}
+
+button.playbutton:focus-visible {
+  border: 2px solid var(--env-element-secondary-background-color) !important;
+  outline-style: 2px solid var(--env-element-primary-background-color) !important;
+}
+.youtubebutton button {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 740px) {
+  .playbutton {
+    width: 80px;
+    height: 80px;
+  }
+
+  .playbutton svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .videoBannerSubHeading {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .bannerwrapper {
+    height: 560px;
+    width: 100%;
+  }
+  .videoBannerTextContainer {
+    top: 96px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .videoBannerTextContainer h2 {
+    font-size: 2.4em !important;
+  }
+
+  .videoBannerSubHeading {
+    font-size: 1.25em !important;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .videoBannerTextContainer {
+    top: 6vw;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .videoBanner {
+    border-radius: 0;
+  }
+
+  .videoBannerTextContainer h2 {
+    font-size: 5vw;
+  }
+}
