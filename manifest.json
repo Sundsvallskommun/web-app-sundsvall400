@@ -1,0 +1,19 @@
+{
+  "id": "teaserList",
+  "version": "1.0.2",
+  "name": {
+    "en": "Teaser list",
+    "sv": "Pufflista"
+  },
+  "author": "Sundsvalls Kommun",
+  "description": {
+    "en": "A list with teaser images",
+    "sv": "En lista med bildpuffar"
+  },
+  "helpUrl": "",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}
