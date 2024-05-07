@@ -1,0 +1,19 @@
+{
+  "id": "campaignCardlisting",
+  "version": "1.0.4",
+  "name": {
+    "en": "Campaign card listing",
+    "sv": "Kampanj kortlistning"
+  },
+  "author": "Sundsvalls Kommun",
+  "description": {
+    "en": "A feed with card based items",
+    "sv": "Ett flöde av kortbaserade artiklar"
+  },
+  "helpUrl": "",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}

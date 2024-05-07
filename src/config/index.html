@@ -1,0 +1,51 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= i18n('settings') %></h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label class="panel-title"><%= i18n('selectArchive') %></label>
+      <input
+        class="form-control"
+        name="selectArchive"
+        data-component="page-selector"
+        data-types="sv:archive"
+        required
+      />
+      
+    </div>
+    <div class="form-group">
+      <label class="panel-title" ><%= i18n('selectCardType') %></label>
+      <select id="select" name="selectCardType" defaultValue="rectangle" class="form-control">
+        <option value="rectangle">Avlång rektangel</option>
+        <option value="square">Kvadrat</option>
+        <option value="event">Event</option>
+     </select>
+     
+      <label class="panel-title"><%= i18n('selectListType') %></label>
+      <select id="select" name="selectListType" defaultValue="listfeed" class="form-control">
+        <option value="listfeed">Feed lista</option>
+        <option value="slideshowlist">Slideshow lista</option>
+     </select>
+    </div>
+    <div class="form-group">
+      <label class="panel-title"><%= i18n('bottomTag') %></label>
+      <p>Taggen visas endast i avlångt rektangelkort</p>
+      <input
+        class="form-control"
+        name="bottomTag"
+      />
+    </div>
+    <div class="form-group">
+      <label class="panel-title"><%= i18n('maxArticles') %></label>
+      <p>max antal artiklar som ska visas i slider (endast slider)</p>
+      <input
+        class="form-control"
+        name="maxArticles"
+        data-component="number-spinner"
+        data-min="4"
+      />
+    </div>
+  </div>
+</div>
