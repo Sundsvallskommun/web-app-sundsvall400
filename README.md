@@ -1,6 +1,6 @@
-# webapp-boilerplate
+# Sundsvall 400 år
 
-sitevision WebApps - Do not merge branches into main. The branches hold Individual web applications for the site Sundsvall 400 år
+Sitevision WebApps - Do not merge branches into main. The branches hold Individual web applications for the site Sundsvall 400 år
 
 ## Developing
 
