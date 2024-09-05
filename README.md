@@ -29,4 +29,4 @@ Some packages are intended to run both on the client and the server. And they ar
 - `npm run deploy-prod` deploys the signed WebApp to a production environment
 - `npm run setup-dev-properties` creates .dev-properties.json with information about the development environment
 
-[Visit developer.sitevision.se for more information](https://developer.sitevision.se)
+[Visit developer.sitevision.se for more information](https://developer.sitevision.se) 
